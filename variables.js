@@ -1,4 +1,4 @@
-const getGreeting = (level) => {
+export const getGreeting = (level) => {
 switch (level) {
   case 'user': {
     return 'Hello, user!';
@@ -16,17 +16,13 @@ switch (level) {
   }
 };
 
-//console.log(getGreeting('superAdmin'));
-
-const getGreetingTwo = (level) => {
+export const getGreetingTwo = (level) => {
   const greeting = 'Hello, ';
   const userToGreet = level === 'user' ? 'user' : (level === 'admin' ? 'admin' : (level === 'superAdmin' ? 'super admin' : (level === 'unauthorized' ? 'unknown user' : 'sorry, I cannot identify your role')));
   return `${greeting} ${userToGreet}!`;
 }
 
-//console.log(getGreetingTwo('sdoisdofs'));
-
-const getGreetingThree = (level) => {
+export const getGreetingThree = (level) => {
   const greeting = 'Hello, ';
   let userToGreet;
   if (level === 'user') {
@@ -43,4 +39,18 @@ const getGreetingThree = (level) => {
   return `${greeting}${userToGreet}!`;
 }
 
-//console.log(getGreetingThree('fgdfgdfgdf'));
+export const isFruitOrVegetable = (name) => {
+  switch (name) {
+  case 'Apple' :
+  case 'Banana':
+  case 'Cherry':
+  case 'Mango':
+    return 'fruit';
+  case 'Potato':
+  case 'Cabbage': 
+  case 'Tomato':
+  case 'Carrot':
+    return 'vegetable';
+  default: return 'Cannot identify, try another one';
+  }
+}
