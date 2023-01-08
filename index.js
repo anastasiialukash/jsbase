@@ -1,6 +1,7 @@
 import * as variables from './tasks/variables.js';
 import * as numstrloops from './tasks/numstrloops.js';
 import * as objarrays from './tasks/objarrays.js';
+import * as functions from './tasks/functions.js';
 
 const usersArray = [
     {
@@ -124,4 +125,10 @@ const arr2 = [10, 'a', 5, 5, 1];
 
 //console.log(objarrays.getFilmsWithAllHeroes(starWarCharacters));
 
-console.log(objarrays.deleteAllEntriesFromArray(starWarCharacters));
+//console.log(objarrays.deleteAllEntriesFromArray(starWarCharacters));
+
+const strArr = ['hi', '', 'wow', null, ['I am not a string you are looking for'], 'I am', 123 ];
+
+const numArr = [2, 4, NaN, 0, 5, 10];
+
+console.log(functions.getSeconds(5));
