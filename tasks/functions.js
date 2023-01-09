@@ -1,5 +1,3 @@
-import bigDecimal from 'js-big-decimal';
-
 export const setAllToUpperCase = (str) => {
   return str.split(' ')
     .map((word) => word.split('')[0].toUpperCase() + word.slice(1))
